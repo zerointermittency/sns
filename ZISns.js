@@ -14,8 +14,12 @@ class ZISns {
         this.sns = new SNS(sns);
     }
 
-    send({topic, endpoint, alert, deepLink, ttl, sound, badge}) {
-        return core.send(this, {topic, endpoint, alert, deepLink, ttl, sound, badge});
+    send(...args) {
+        return core.send(this, ...args);
+    }
+
+    sendMultiple(...args) {
+        return core.send.multiple(this, ...args);
     }
 
     get endpoint() {

@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = (sns) => {
-    describe('topic', () => {
+    describe.skip('topic', () => {
         it('create', function(done) {
             this.timeout(6000);
             let arn;

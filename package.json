@@ -1,6 +1,6 @@
 {
   "name": "@zerointermittency/sns",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "ZISns.js",
   "scripts": {
     "test": "nyc node --max_old_space_size=4096 test/index.js",
@@ -22,14 +22,15 @@
     "url": "https://github.com/zerointermittency/sns/issues"
   },
   "dependencies": {
+    "@zerointermittency/error": "^1.0.5",
     "aws-sdk": "^2.149.0",
-    "@zerointermittency/error": "^1.0.5"
+    "bluebird": "^3.5.1"
   },
   "devDependencies": {
+    "@zerointermittency/date": "^1.0.0",
     "benchmark": "^2.1.4",
     "chai": "^3.5.0",
     "mocha": "^3.5.0",
-    "@zerointermittency/date": "^1.0.0",
     "nyc": "^11.3.0",
     "test-console": "^1.0.0",
     "wrapper-path": "^2.0.0"
